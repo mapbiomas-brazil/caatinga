@@ -7,7 +7,7 @@ In this repository we share a set of scripts that were used for the construction
     <img  src="images/gif_mapeamento.gif">
 </p>
 
-figure 1: Limits of hydrographic basins, mosaics, and one of the maps in collection 5.
+Figure 1: Limits of hydrographic basins, mosaics, and one of the maps in collection 5.
 
 The classes produced in this work correspond to level 3, available in:
 
