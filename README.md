@@ -13,6 +13,9 @@ The classes produced in this work correspond to level 3, available in:
 
 > https://mapbiomas.org/codigos-de-legenda?cama_set_language=pt-BR
 
-![](images/legendaCaatinga.png)
+
+<p align="center">
+    <img  src="images/legendaCaatinga.png">
+</p>
 
 Table 1: Legend of the classified classes.
