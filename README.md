@@ -4,7 +4,7 @@ In this repository we share a set of scripts that were used for the construction
 
 
 <p align="center">
-    <img width="460" height="300" src="images/gif_mapeamento.gif">
+    <img  src="images/gif_mapeamento.gif">
 </p>
 
 figure 1: Limits of hydrographic basins, mosaics, and one of the maps in collection 5.
