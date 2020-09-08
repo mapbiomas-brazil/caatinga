@@ -34,7 +34,7 @@ params = {
     'outAsset': 'projects/mapbiomas-workspace/AMOSTRAS/col5/CAATINGA/ROIsXBaciasBalClusterv2/',
     'pmtClustLVQ': { 'numClusters': 6, 'learningRate': 0.0001, 'epochs': 800},
     'splitRois': 0.8,
-     'numeroTask': 6,
+    'numeroTask': 6,
     'numeroLimit': 40,
     'conta' : {
         '0': 'caatinga01',
