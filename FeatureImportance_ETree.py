@@ -17,9 +17,9 @@ from sklearn.ensemble import ExtraTreesClassifier
 #from sklearn.ensemble import RandomForestClassifier
 
 # endereco da pasta onde estam as amostras em csv     
-camCarta = '/run/media/superusuario/Almacen/amostras/mycartas/' 
+camCarta = '/home/superusuario/Dados/ProjMapbiomas/Col5/DB' 
 # endereco da pasta onde seram guardadas as os graficos de importancia
-camino = '/home/superusuario/Dados/ProjMapbiomas/collection4/'
+camino = '/home/superusuario/Dados/ProjMapbiomas/Col5/'
 filelist = os.listdir(camCarta)
 #lsFeatures = []
 # ===== diccionario que guardará as bandas de interesse como key 
