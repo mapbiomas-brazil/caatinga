@@ -68,7 +68,7 @@ To collect enough and necessary items for each hydrographic basin, just leave th
 /// according to the percentage of presence of this class in the basin and the   ////
 /// statistical representativeness                                               ////
 /// n = z2 * (p * (1-p)) / E2 ===> z = 1.96 ====> E = 0.025 ==> no = 1 / E2      ////
-/// n = (B * N * (1-N)) / E2                     Tortora index (1978)            /////////////////////////////////////////////////////////////////////////////////////////
+/// n = (B * N * (1-N)) / E2                     Tortora index (1978)            ////
 ```
 > ==> run  :  python  pontos_balanceadosv2.py
 
