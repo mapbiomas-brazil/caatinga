@@ -102,8 +102,7 @@ For more information visit [scikit-learn](https://scikit-learn.org/stable/auto_e
 
 ## *Classification of Landsat mosaics with Random Forest*
 After selecting the characteristics space, refining the sample set, selecting the parameters to be used for the classification, the next step would be the classification. Change some parameters in the dictionary:
-'''
-# code block
+```python
 param ={
     'assetOut': 'projects/mapbiomas-workspace/AMOSTRAS/col5/CAATINGA/classificacoes/classesV11/',
     'assetROIs': {'id':'projects/mapbiomas-workspace/AMOSTRAS/col4/CAATINGA/PtosBacias2_1000'},'anoInicial': 1985,
@@ -116,7 +115,7 @@ param ={
        'seed': 0
     }
 }
-'''
+```
 <!-- ''' -->
 ‘assetROIs’ is a folder within a GEE asset, which stores the sample ee.FeaturesCollection for each hydrographic basin. Each ee.FeaturesCollection has a set of points per year that will be used in the classification.
 
