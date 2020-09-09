@@ -22,7 +22,7 @@ Table 1: Legend of the classified classes.
 
 The flow of the mapping process is explained in figure 2 below:
 <p align="center">
-    <img  src="images/fluxograma.png">
+    <img  src="images/fluxograma.png", width="350", alt="accessibility text">
 </p>
 
 Figure 2. Classification process of Mapbiomas current collection (1985-2019) in the Caatinga Biome.
