@@ -62,13 +62,13 @@ arqFeitos = open("registros/lsBaciasROIsfeitasBalanceadas.txt", 'r')
 To collect enough and necessary items for each hydrographic basin, just leave the Tortora method, 1978 in effect, in the input parameters:
 > 'metodotortora': True,
 
-/////////////////////////////////////////////////////////////////////////////////////
-/// calculates the number of samples that represent each class well              ////
-/// according to the percentage of presence of this class in the basin and the   ////
-/// statistical representativeness                                               ////
-/// n = z2 * (p * (1-p)) / E2 ===> z = 1.96 ====> E = 0.025 ==> no = 1 / E2      ////
-/// n = (B * N * (1-N)) / E2                     Tortora index (1978)            ////
-/////////////////////////////////////////////////////////////////////////////////////
+>/////////////////////////////////////////////////////////////////////////////////////
+>/// calculates the number of samples that represent each class well              ////
+>/// according to the percentage of presence of this class in the basin and the   ////
+>/// statistical representativeness                                               ////
+>/// n = z2 * (p * (1-p)) / E2 ===> z = 1.96 ====> E = 0.025 ==> no = 1 / E2      ////
+>/// n = (B * N * (1-N)) / E2                     Tortora index (1978)            ////
+>/////////////////////////////////////////////////////////////////////////////////////
 
 > ==> run  :  python  pontos_balanceadosv2.py
 
@@ -94,7 +94,7 @@ For the construction of the use and coverage maps of the Mapbiomas project, annu
 The Random Forest Classifier is trained using bootstrap aggregation, where each constructed tree is adjusted based on a bootstrap sample of the training observations and a random set of size bands fixed in the input parameters. The out-of-bag error (OOB) is the average error for each calculated using predictions from trees that do not contain in their respective bootstrap sample. This allows the Random Forest Classifier to be adjusted and validated during the first training, and to compare with other sets of parameters. In this analysis, the parameter to modify is the number of trees. For this, the paths to the CSV samples must be modified:
 
 <p align="center">
-    <img  src="images/curva_ROCparaRF.png", width="350", alt="accessibility text">
+    <img  src="images/curva_ROCparaRF.png", width="420", alt="accessibility text">
 </p>
 Figure 4: Plot of ROC by max_features parameters.
 
@@ -102,20 +102,22 @@ For more information visit [scikit-learn](https://scikit-learn.org/stable/auto_e
 
 ## *Classification of Landsat mosaics with Random Forest*
 After selecting the characteristics space, refining the sample set, selecting the parameters to be used for the classification, the next step would be the classification. Change some parameters in the dictionary:
-
-> param ={
->    'assetOut': 'projects/mapbiomas-workspace/AMOSTRAS/col5/CAATINGA/classificacoes/classesV11/',
->    'assetROIs': {'id':'projects/mapbiomas-workspace/AMOSTRAS/col4/CAATINGA/PtosBacias2_1000'},'anoInicial': 1985,
->    'anoFinal': 2019,
->    'pmtRF': {
->       'numberOfTrees': 60,
->       'variablesPerSplit': 6,
->       'minLeafPopulation': 3,
->       'maxNodes': 10,
->       'seed': 0
->    }
->}
-
+'''
+# code block
+param ={
+    'assetOut': 'projects/mapbiomas-workspace/AMOSTRAS/col5/CAATINGA/classificacoes/classesV11/',
+    'assetROIs': {'id':'projects/mapbiomas-workspace/AMOSTRAS/col4/CAATINGA/PtosBacias2_1000'},'anoInicial': 1985,
+    'anoFinal': 2019,
+    'pmtRF': {
+       'numberOfTrees': 60,
+       'variablesPerSplit': 6,
+       'minLeafPopulation': 3,
+       'maxNodes': 10,
+       'seed': 0
+    }
+}
+'''
+<!-- ''' -->
 ‘assetROIs’ is a folder within a GEE asset, which stores the sample ee.FeaturesCollection for each hydrographic basin. Each ee.FeaturesCollection has a set of points per year that will be used in the classification.
 
 > == > run:  python classificacao_bacias_final.py
